@@ -2,3 +2,5 @@ Python PostgreSQL Sample [![Build Status](https://apibeta.shippable.com/projects
 ======================
 
 Tests basic SQL commands using the psycopg2 driver for Python.
+
+This sample is built for Shippable, a docker based continuous integration and deployment platform.

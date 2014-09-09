@@ -19,9 +19,11 @@ script:
   - nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
-  - echo $Foo
+  - echo $Foo and $var
 env:
- secure: LCY+q7gdonYbAO4akZAks+Cj8CxLiP00QH5kS9Ko6dni30x8r2CWhZJ2Sr2aSNjMG/mBthhRkBZVy1NA6lOQTTUJfUgXGRM+06On445bL7KxWVe5zkVC+hDsXN5EC/jkoHdqCbZ6Su8Y3JcYc0nijgIfC5NEd2OeZzXafpK6aZxtCOBQn4xSCIn7lakPTXeK1VqL7GyX8YTOJLuFSxIkeO9uOkcBHmDsw8rDoUIKN5WHfXO/CxCzPgwYLorMx+hDVpiGToIm0+cer1F6ETht+wet5+YYJeZnOsnMqDM8y1ZYxZypp/Atuzf/anLV0bsSTS9HoBRmos5Pwhzgb5JubQ==
+ global:
+  - secure: taqwYNOyqgR6yMCdyzauUnb6OF9vJlZgcRr7D/4dKrU/Ayw2pcEUfYXJNIwUBErfFn15ChrZ3bETFAML4Hfq5+PDTnpHVgvC1AnqLOfIqN4D8Xngpi/8BURpsgImOLdKuakWCa/gj3tVAkN3NC4Nqscm4A2eugo+Lx+fgtL/l+Hm9OQbUKSWIcZWRaf4oHVVtNWu3WrPosaE0u97E+ar2NI/WQg+9pRuqok0N/Xypymw1mddfKEl4M+4jluPgohSf0HoAxK/rwmaAbxmWSpJHu5iI9nAlIEjPiduyQBLtumVFJk8rJFV/KdX/XTrjzaB0AYq7B2+ZgQm9lMdQQ8tig==
+  - secure: pL9i0l5UxsQ9Eidb0hZhZrpw8TZSMkAVIAduGDjiN8iZpAucDDNCbOiJKaiDokQ5ZSGg2iBylJkJBKvO2syNfOHuiI8aKeX1obla/JNTkgoLcTFuf3+zA3ad1E/DMNEO+P021o2fYmz1HBrOs1Sf7688RQ67DSHu2aZGH/IjYpSl5kh3VZJ+D4kaAN979WruPDR3Lu1Ul6f+zXvktgxtK9GTOId10DQmRGZkPK+v27zceXUuaRYolLrGFtfI5PZes2nptCEYo25IDzYpZ1cmo1qTxWil5p9G+W8RIiEH8V/1bif3KK8vOYdA1q/6J6ui6wTvhCwrSvKtOaO8rbvpXA==
 notifications:
   email:
      - vidya@shippable.com

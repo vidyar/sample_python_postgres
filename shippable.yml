@@ -28,4 +28,4 @@ notifications:
   email:
      - vidya@shippable.com
      - vidyac.raghav@gmail.com
-#commit_container: vidyar/sample_python_postgres
+commit_container: vidyaragh/sample_python_postgres

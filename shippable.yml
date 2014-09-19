@@ -20,13 +20,10 @@ script:
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   - echo $Foo and $var
-env:
- global:
-  - secure: taqwYNOyqgR6yMCdyzauUnb6OF9vJlZgcRr7D/4dKrU/Ayw2pcEUfYXJNIwUBErfFn15ChrZ3bETFAML4Hfq5+PDTnpHVgvC1AnqLOfIqN4D8Xngpi/8BURpsgImOLdKuakWCa/gj3tVAkN3NC4Nqscm4A2eugo+Lx+fgtL/l+Hm9OQbUKSWIcZWRaf4oHVVtNWu3WrPosaE0u97E+ar2NI/WQg+9pRuqok0N/Xypymw1mddfKEl4M+4jluPgohSf0HoAxK/rwmaAbxmWSpJHu5iI9nAlIEjPiduyQBLtumVFJk8rJFV/KdX/XTrjzaB0AYq7B2+ZgQm9lMdQQ8tig==
-  - secure: pL9i0l5UxsQ9Eidb0hZhZrpw8TZSMkAVIAduGDjiN8iZpAucDDNCbOiJKaiDokQ5ZSGg2iBylJkJBKvO2syNfOHuiI8aKeX1obla/JNTkgoLcTFuf3+zA3ad1E/DMNEO+P021o2fYmz1HBrOs1Sf7688RQ67DSHu2aZGH/IjYpSl5kh3VZJ+D4kaAN979WruPDR3Lu1Ul6f+zXvktgxtK9GTOId10DQmRGZkPK+v27zceXUuaRYolLrGFtfI5PZes2nptCEYo25IDzYpZ1cmo1qTxWil5p9G+W8RIiEH8V/1bif3KK8vOYdA1q/6J6ui6wTvhCwrSvKtOaO8rbvpXA==
 notifications:
   email:
      - vidya@shippable.com
      - vidyac.raghav@gmail.com
+     
 commit_container: vidyar/sample_python_postgres
 build_image: vidyar/sample_python_postgres

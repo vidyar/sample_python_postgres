@@ -26,4 +26,4 @@ notifications:
      - vidyac.raghav@gmail.com
      
 commit_container: vidyar/sample_python_postgres
-build_image: vidyar/sample_python_postgres
+#build_image: vidyar/sample_python_postgres

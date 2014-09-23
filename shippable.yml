@@ -20,10 +20,12 @@ script:
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   - echo $Foo and $var
+  
 notifications:
   email:
      - vidya@shippable.com
      - vidyac.raghav@gmail.com
      
 commit_container: vidyar/sample_python_postgres
-build_image: vidyar/sample_python_postgres .
+
+
